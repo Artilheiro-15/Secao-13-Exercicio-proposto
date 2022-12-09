@@ -1,6 +1,5 @@
 package entities;
 
-import entities.Orderitem;
 import enums.OrdemStatus;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

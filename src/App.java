@@ -5,12 +5,18 @@ import entities.Product;
 import enums.OrdemStatus;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
 
   public static void main(String[] args) throws Exception {
+    Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
+    //ENUNCIADO DO EXERCICIO
+    //LER OS DADOS DE UM PEDIDO COM N ITENS(NFORNECIDO PELO O USUARIO).DEPOIS
+    //MOSTRAR UM SUMARO DO PEDIDO CONFORME EXEMPLO, NOTA: O INSTANTE DO PEDIDO
+    //DEVE SER O INSTANTE DO SISTEMA: NEW DATE().
 
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     System.out.println("=================================");
@@ -53,7 +59,6 @@ public class App {
 
       //agora foi adicionado ordemItem dentro da lista de itens do pedido!
       // como eu ja estanciei o order acima do for eu nao presiso estanciar agr
-
       order.addItem(it);
     }
     System.out.println("=================================");
